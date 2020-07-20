@@ -256,7 +256,7 @@ tab:
       hide_bbox_dimensions: Nascondi le dimensioni finite
       hide_bbox_dimensions_help: Se questa opzione è attivata, verranno nascoste le dimensioni **finite** delle parti.
       hide_untyped_material_dimensions: Nascondi le dimensioni delle parti senza definizione del materiale
-      hide_untyped_material_dimensions_help: Se questa opzione è attivata, verranno nascoste le dimensioni delle parti senza definizione del materiale (che non siano **Massello**, **Pannelli** o **Dimensionali**).
+      hide_untyped_material_dimensions_help: Se questa opzione è attivata, verranno nascoste le dimensioni delle parti senza definizione del materiale (che non siano cioè **Tavole**, **Pannelli** o **Dimensionali**).
       hide_final_areas: Nascondi il valore dell'area delle parti di tipo *Pannelli*
       hide_final_areas_help: Se questa opzione è attivata, verrà nascosta **l'area** delle parti di tipo *Pannelli*.
       hide_edges: Nascondi la colonna "Bordature"
@@ -416,7 +416,7 @@ tab:
         Modifica il materiale  '{{ material_name }}' per aggiornare questa lista.
       option_std_sheet_add: Aggiungi una misura di pannello ...
       option_std_sheet_none: Nessuna
-      option_scrap_sheet_sizes: Pannello non squadrato
+      option_scrap_sheet_sizes: Ritagli di pannelli
       option_scrap_sheet_sizes_placeholder: lunghezza x larghezza ; ...
       option_scrap_sheet_sizes_help:  |
         Elenco dei ritagli di pannelli da usare nello schema di taglio.
@@ -459,7 +459,7 @@ tab:
         parameters: Impostazioni non corrette. La squadratura è più grande del 25% della tavola + lunga.
         no_parts: Nessuna parte.
         no_sheet: Le dimensioni dei pannelli non sono correttamente configurate e non ci sono ritagli disponibili.
-        no_placement_possible: Le dimensioni delle parti sono troppo grandi per essere contenute in un pannello (squagratura troppo larga, dimensioni insufficienti del pannello, taglio della lama troppo grande, ...).
+        no_placement_possible: Le dimensioni delle parti sono troppo grandi per essere contenute in un pannello (squadratura troppo larga, dimensioni insufficienti del pannello, taglio della lama troppo grande, ...).
         bad_error: Errore negli algoritmi di calcolo, contatta lo sviluppatore, il tuo può essere un caso interessante.
         unplaced_parts: '**Una parte** non può essere schematizzata, perchè è troppo grande.'
         unplaced_parts_plural: Ci sono **{{ count }} parti** che non possono essere schematizzate perchè troppo grandi.
@@ -482,8 +482,8 @@ tab:
       obsolete_cutlist: Impossibile, la distinta non è aggiornata. Va rigenerata.
     warning:
       partial_cutlist: Questa distinta è una rappresentazione parziale del tuo modello, perchè mostra solo una selezione di parti.
-      no_typed_materials_in_model: Le parti del modello non usano alcun materiale definito di tipo **Massello** o **Pannello** o **Dimensionale**.
-      no_typed_materials_in_selection: Le parti selezionate non usano alcun materiale definito di tipo **Massello** o **Pannello** o **Dimensionale**
+      no_typed_materials_in_model: Le parti del modello non usano alcun materiale definito di tipo **Tavole** o **Pannello** o **Dimensionale**.
+      no_typed_materials_in_selection: Le parti selezionate non usano alcun materiale definito di tipo **Tavole** o **Pannello** o **Dimensionale**
       export_empty: Nessuna parte da esportare.
     success:
       exported_to: Esportazione in {{ export_path }} completata.
@@ -492,14 +492,14 @@ tab:
         Le parti da inserire nella *distinta* devono essere di tipo **componenti**.
         Se ci sono solo "gruppi", gli stessi devono essere convertiti in **componenti**.
         Usando **componenti** per le parti, gli stessi possono essere replicati senza inutili duplicazioni.
-      no_typed_materials: Applica il materiale alle parti che devono essere incluse nella distinta e definisci le proprietà del materiale come (**Massello** o **Pannello** o **Dimensionale**) nella scheda <i class="ladb-opencutlist-icon-materials"></i> **Materiali**.
+      no_typed_materials: Applica il materiale alle parti che devono essere incluse nella distinta e definisci le proprietà del materiale come (**Tavole** o **Pannello** o **Dimensionale**) nella scheda <i class="ladb-opencutlist-icon-materials"></i> **Materiali**.
     obsolete_base: Per rimanere aggiornata, la distinta parti va rigenerata.
   materials:
     label: Materiali
     title: Materiali
     new: Nuovo Materiale
     type_0: Imprecisato
-    type_1: Massello
+    type_1: Tavole
     type_2: Pannello
     type_3: Dimensionale
     type_4: Bordatura
