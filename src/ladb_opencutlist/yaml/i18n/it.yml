@@ -107,6 +107,9 @@ tab:
     tooltip:
       show_hide_block: Mostra / Nascondi questo gruppo
       scroll_to_block: Scorri fino al gruppo
+      not_available_std_width: La larghezza *{{ std_dimension }}* del materiale '{{ material_name }}' non è stata definita
+      not_available_std_thickness: Lo spessore *{{ std_dimension }}* del materiale '{{ material_name }}' non è stato definito
+      not_available_std_section: La sezione trasversale *{{ std_dimension }}* del materiale '{{ material_name }}' non è stata definita
       add_std_width_to_material: |
         Aggiungi la larghezza *{{ std_dimension }}*
         al materiale '{{ material_name }}'
