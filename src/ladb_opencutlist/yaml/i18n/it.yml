@@ -28,7 +28,7 @@ default:
   error: OOps!
   warning: Avviso
   tip: Suggerimento
-  good: Giusto
+  good: Corretto
   bad: Sbagliato
   date_format: m/d/Y g:ia
   date_format_short: m/d/Y
